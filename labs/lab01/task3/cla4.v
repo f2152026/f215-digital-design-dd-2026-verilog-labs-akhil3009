@@ -64,7 +64,7 @@ or #(2) (cout,g[3],n,r,y,d);
  xor #(2) (sum[0],p[0],cin);
  xor #(2) (sum[1],p[1],c1);
  xor #(2) (sum[2],p[2],c2);
- xor #(2) (sum[3],p[3],cout);
+ xor #(2) (sum[3],p[3],c3);
 
 
 endmodule
