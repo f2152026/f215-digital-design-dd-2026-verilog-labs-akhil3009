@@ -29,8 +29,8 @@ module cla4(
 
 wire [3:0] p;
 wire [3:0] g;
-wire c1, c2, c3, c4;
-wire k, l, m, n, v ,q ,r ,s,y,d;
+wire c1, c2, c3;
+wire k, l, m, n, v ,q , r, s, w, y, d;
 
 
 xor #(2) (p[0], a[0], b[0]);
@@ -58,13 +58,13 @@ and #(2) (d, p[3], p[2], p[1], p[0], cin);
 or #(2) (c1, g[0], k);
 or #(2) (c2,g[1],l,v);
 or #(2) (c3,g[2],m,q,s);
-or #(2) (c4,g[3],n,r,y,d);
+or #(2) (cout,g[3],n,r,y,d);
 
 
  xor #(2) (sum[0],p[0],cin);
  xor #(2) (sum[1],p[1],c1);
  xor #(2) (sum[2],p[2],c2);
- xor #(2) (sum[3],p[3],c3);
+ xor #(2) (sum[3],p[3],cout);
 
 
 endmodule
